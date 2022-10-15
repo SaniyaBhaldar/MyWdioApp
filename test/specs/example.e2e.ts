@@ -5,7 +5,7 @@ import ChatPage from '../pageobjects/chat.page';
 
 
 describe('My Login application', () => {
-    xit('should login and logout with valid credentials', async () => {
+    it('should login and logout with valid credentials', async () => {
         await LoginPage.open();
         await LoginPage.login(AccTestData.TC1.OrganizationID,AccTestData.TC1.Username,AccTestData.TC1.Password);
         await expect(SecurePage.accUser).toBeExisting();
